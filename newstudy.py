@@ -62,16 +62,46 @@ a = [1,2,1,3,5,3,6,4,8,9,5,9,1,2] #-----------------------to convert SET
 #     else:
 #         print('Waste studnt')
 #--------------------------------------------------------------------------------------------------------
-std = []
-roll_no = set()
+# std = []
+# roll_no = set()
 
-for i in range(5):
-    a = input('enter student name : ')
-    b = input('enter roll no : ')
-    std.append(a)
-    roll_no.add(b)
+# for i in range(5):
+#     a = input('enter student name : ')
+#     b = input('enter roll no : ')
+#     std.append(a)
+#     roll_no.add(b)
 
 
 
-print(std)
-print(roll_no)
+# print(std)
+# print(roll_no)
+#---------------------------------------------------------------------------------------------
+#---------------------------using class in python
+
+class bankacount:
+    def __init__(self,acount_holder,Bank_balance):
+        self.acount_holder = acount_holder
+        self.bank_balance = Bank_balance
+
+    def deposit(self,amount):
+        self.bank_balance += amount
+        print(f'{amount} is deposit successfully')
+        print(f'Your total bank balance is : {self.bank_balance}')
+
+    def withdrow(self,amount):
+        if amount <= self.bank_balance:
+            self.bank_balance -= amount
+            print(f'{amount} is withdrow successfully and the balance is {self.bank_balance}')
+        else:
+            print('Insefecient bank balance')
+    # def balance(self):
+    #     print(f'Your bank balance is {self.bank_balance}')
+
+
+AC1 = bankacount('Shaji',100000)
+
+AC1.deposit(int(input('Enter deposite amount : ')))
+AC1.withdrow(int(input('Enter withdraw amount : ')))
+# AC1.balance()
+
+        
