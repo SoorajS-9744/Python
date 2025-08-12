@@ -4,7 +4,7 @@
 # print(city)
 
 
-#que 2
+# que 2
 
 # lenght = 7
 # width = 5
@@ -12,7 +12,7 @@
 # print('area =',area)
 
 
-#que 3
+# que 3
 
 # x = 25
 # y = 30
@@ -24,14 +24,14 @@
 # print(x > y)
 
 
-#que 4
+# que 4
 
 # a = 'apple'
 # b = 'Apple'
 # print(a == b)
 
 
-#que 5
+# que 5
 
 # a = 0
 # print(a)
@@ -43,7 +43,7 @@
 # print(a)
 
 
-#que 6
+# que 6
 
 # a = int(input('Enter a number :'))
 
@@ -54,7 +54,7 @@
 # print(a)
 
 
-#que 7
+# que 7
 
 # a = [1,2,3]
 # b = a
@@ -62,7 +62,7 @@
 # print(a is b)
 
 
-#que 8
+# que 8
 
 # x = [10,20]
 # y = [10,20]
@@ -71,7 +71,7 @@
 # print(x is y)
 
 
-#que 9
+# que 9
 
 # x = [10,20]
 # y = [10,20]
@@ -79,3 +79,10 @@
 # print(x is not y)
 
 
+import datetime
+
+x = datetime.datetime.now()
+
+# x = datetime.date.today()
+
+print(x)

@@ -32,12 +32,12 @@
 
 #--------------------------------------------------
 
-a = [1,3,5,7,9]      # map using lambda and list
-b = [2,4,6,8,10]
+# a = [1,3,5,7,9]      # map using lambda and list
+# b = [2,4,6,8,10]
 
 # x = lambda a,b:a+b
 # c = list(map(x,a,b))
 
-c = list(map(lambda x,y:x+y,a,b))
+# c = list(map(lambda x,y:x+y,a,b))
 
-print(c)
+# print(c)
